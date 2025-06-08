@@ -1,0 +1,8 @@
+<input type="text" placeholder="search value" (input)="onSearch($event)">
+<ul *ngIf="dataFlag">
+    <li *ngFor="let movie of movies">
+        {{movie.title}}
+    </li>
+</ul>
+
+<ng-content></ng-content>

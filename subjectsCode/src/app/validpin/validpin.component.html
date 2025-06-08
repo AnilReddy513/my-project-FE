@@ -1,0 +1,14 @@
+<form [formGroup]="mpinForm">
+<div>
+    <label for="">1st pin</label>
+    <input type="password" name="" id="" formControlName="mpin1" maxlength="4">
+</div>
+<div>
+    <label for="">2nd pin</label>
+    <input type="password" name="" id="" formControlName="mpin2" maxlength="4">
+</div>
+<div>
+    <p>{{errorMessage}}</p>
+</div>
+<button type="button"(click)="validatePin()">submit</button>
+</form>

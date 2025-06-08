@@ -1,0 +1,8 @@
+input[type=range]{
+    width:200px;
+    vertical-align: middle;
+}
+input[type=number]{
+    width: 100px;
+    margin-right: 10px;
+}

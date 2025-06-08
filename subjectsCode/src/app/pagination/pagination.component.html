@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>transaction Type</th>
+            <th>currency</th>
+            <th>amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tab of pagedTransactions">
+<td>{{tab.transactionType}}</td>
+<td>{{tab.transactionCodeCurrency}}</td>
+<td>{{tab.transactionAmount}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="btns">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">previous</button>
+    page {{currentPage}} of {{totalPages}}
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">next</button>
+</div>

@@ -1,0 +1,11 @@
+<div class="limits" *ngFor="let limit of limits; let i=index">
+{{limit.label}}
+
+
+<input type="number" [value]="limit.value" min="0" (input)="onInputChange($event,i)">
+
+<input type="range" [min]="limit.min" [max]="limit.max" [value]="limit.value" (input)="sliderchange($event,i)">
+<p style="margin-top: 10px;">{{limit.value}}</p>
+</div>
+
+

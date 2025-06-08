@@ -1,0 +1,23 @@
+<div class="itemslist" >
+    <li *ngFor="let item of items">
+        {{item.id}}  - {{item.name}}
+        <button (click)="startEdit(item)">Edit</button>
+        <button (click)="delete(item.id)">Delete</button>
+    </li>
+
+
+
+
+    <div>
+        <input [(ngModel)]="newItem" placeholder="enter new item">
+        <button (click)="addItem()">Add Item</button>
+    </div>
+
+    <div *ngIf="selectedId">
+   <input [(ngModel)]="updateItem " placeholder="update new item" >
+   <button (click)="upDateItem()">update Item</button>
+    </div>
+
+</div>
+
+
