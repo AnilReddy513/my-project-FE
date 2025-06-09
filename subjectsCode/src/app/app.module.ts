@@ -24,6 +24,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { MergeandswitchmapsComponent } from './mergeandswitchmaps/mergeandswitchmaps.component';
 import { MergeMapCodeForMoviesComponent } from './merge-map-code-for-movies/merge-map-code-for-movies.component';
 import { SwitchmapcodeComponent } from './switchmapcode/switchmapcode.component';
+import { NewpaginationCodeComponent } from './newpagination-code/newpagination-code.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SwitchmapcodeComponent } from './switchmapcode/switchmapcode.component'
     PaginationComponent,
     MergeandswitchmapsComponent,
     MergeMapCodeForMoviesComponent,
-    SwitchmapcodeComponent
+    SwitchmapcodeComponent,
+    NewpaginationCodeComponent
   ],
   imports: [
     BrowserModule,CommonModule,
