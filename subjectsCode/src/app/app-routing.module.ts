@@ -12,6 +12,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { MergeandswitchmapsComponent } from './mergeandswitchmaps/mergeandswitchmaps.component';
 import { MergeMapCodeForMoviesComponent } from './merge-map-code-for-movies/merge-map-code-for-movies.component';
 import { SwitchmapcodeComponent } from './switchmapcode/switchmapcode.component';
+import { NewpaginationCodeComponent } from './newpagination-code/newpagination-code.component';
 
 const routes: Routes = [
   {
@@ -41,7 +42,10 @@ const routes: Routes = [
     path:"mergmapcode",component:MergeandswitchmapsComponent
   },{
     path:'SwitchmapcodeComponent',component:SwitchmapcodeComponent
-  } , {
+  } , 
+  {
+    path:"newpagination", component:NewpaginationCodeComponent
+  },{
     path:"**", component:MergeandswitchmapsComponent
   },
 ];
