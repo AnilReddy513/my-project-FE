@@ -10,6 +10,7 @@ export class DataserviceService {
   msg$ = this.messageSource.asObservable();
 
 public itemsurl = "http://localhost:3000/items";
+public ApiPage = "http://localhost:1000/pagination";
 
 movies = "http://localhost:5000/movies";
 
@@ -44,4 +45,10 @@ return this.http.put(this.itemsurl + '/' + id, name);
 delateItem( id:number){
   return this.http.delete(this.itemsurl + '/' + id);
   }
+
+
+apipage(reqbody:any):Observable<any>{
+ return this.http.post(this.ApiPage, reqbody);
+}
+
 }
