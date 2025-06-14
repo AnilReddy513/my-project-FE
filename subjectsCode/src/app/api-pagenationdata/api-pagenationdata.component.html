@@ -1,0 +1,26 @@
+<div class="pagination-controls">
+ <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">‹ Prev</button>
+ <ng-container *ngFor="let p of pages">
+ <button
+*ngIf="p !== '...'; else dot"
+ (click)="changePage(p)"
+  [class.active]="p === currentPage"
+ >
+ {{ p }}
+ </button>
+
+ <ng-template #dot>
+     <span class="dots">...</span>
+ </ng-template>
+ </ng-container>
+
+ <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Next ›</button>
+</div>
+
+<table>
+ <tr><th>ID</th><th>Name</th></tr>
+ <tr *ngFor="let item of displayedData">
+ <td>{{ item.id }}</td>
+ <td>{{ item.name }}</td>
+ </tr>
+</table>
