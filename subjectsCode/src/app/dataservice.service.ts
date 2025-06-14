@@ -10,7 +10,7 @@ export class DataserviceService {
   msg$ = this.messageSource.asObservable();
 
 public itemsurl = "http://localhost:3000/items";
-public ApiPage = "http://localhost:1000/pagenation";
+public ApiPage = "http://localhost:1000/pagination";
 
 movies = "http://localhost:5000/movies";
 
